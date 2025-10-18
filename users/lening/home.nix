@@ -5,6 +5,7 @@
     ./${homepath}/software/neofetch.nix
     ./${homepath}/software/tmux.nix
     ./${homepath}/software/tree.nix
+    ./${homepath}/software/nixvim.nix
   ];
 
   # home.packages = with pkgs; [
