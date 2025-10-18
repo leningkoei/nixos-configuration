@@ -2,10 +2,11 @@
   imports = [
     ./${homepath}/public.nix
 
+    ./${homepath}/software/elan.nix
     ./${homepath}/software/neofetch.nix
+    ./${homepath}/software/nixvim.nix
     ./${homepath}/software/tmux.nix
     ./${homepath}/software/tree.nix
-    ./${homepath}/software/nixvim.nix
   ];
 
   # home.packages = with pkgs; [
