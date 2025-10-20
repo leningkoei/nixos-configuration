@@ -1,19 +1,13 @@
-{ homepath, ... }: {
+{ ... }: {
   imports = [
-    ./${homepath}/public.nix
+    ../../home/public.nix
 
-    ./${homepath}/software/elan.nix
-    ./${homepath}/software/neofetch.nix
-    ./${homepath}/software/nixvim.nix
-    ./${homepath}/software/tmux.nix
-    ./${homepath}/software/tree.nix
+    ../../home/software/elan.nix
+    ../../home/software/neofetch.nix
+    ../../home/software/nixvim.nix
+    ../../home/software/tmux.nix
+    ../../home/software/tree.nix
   ];
-
-  # home.packages = with pkgs; [
-  #   neofetch
-  #   tmux
-  #   tree
-  # ];
 
   programs.git = {
     enable = true;
