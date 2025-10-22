@@ -45,7 +45,7 @@
           pattern = "*.lean",
           callback = function()
             require("lean").setup({
-              mappings = true
+              mappings = true,
             })
           end,
         }
