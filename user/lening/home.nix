@@ -23,7 +23,7 @@
     '';
     # aliases
     shellAliases = {
-      # foo = "bar --version para";
+      # foo = "bar --parameter argument";
       rebuild = "sudo nixos-rebuild switch --flake ~/nixos-configuration";
     };
   };

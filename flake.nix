@@ -25,6 +25,7 @@
 
           ./host/shen-zhou-pc/configuration.nix
           ./module/font.nix
+          ./module/input-method.nix
           ./module/home-manager.nix
         ];
       };
@@ -38,6 +39,7 @@
 
           ./host/visual-box-vm-dell-pc/configuration.nix
           ./module/font.nix
+          ./module/input-method.nix
           ./module/home-manager.nix
         ];
       };
