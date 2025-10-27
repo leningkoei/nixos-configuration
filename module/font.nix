@@ -10,20 +10,20 @@
       enable = true;
       defaultFonts = {
         serif = [
-          "NotoSerif NF"
+          "NotoSerif Nerd Font"
           "Noto Serif CJK SC"
           "Noto Serif CJK TC"
           "Noto Serif CJK JP"
           "Noto Serif CJK KR"
         ];
         sansSerif = [
-          "NotoSans NF"
+          "NotoSans Nerd Font"
           "Noto Sans CJK SC"
           "Noto Sans CJK TC"
           "Noto Sans CJK JP"
           "Noto Sans CJK KR"
         ];
-        monospace = [ "NotoMono NF" ];
+        monospace = [ "NotoMono Nerd Font" ];
       };
     };
   };
