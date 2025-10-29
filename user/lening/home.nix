@@ -1,6 +1,7 @@
 { ... }: {
   imports = [
     ../../home/public.nix
+    ../../home/desktop/default.nix
 
     ../../home/software/elan.nix
     ../../home/software/neofetch.nix
