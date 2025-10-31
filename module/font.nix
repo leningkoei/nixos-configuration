@@ -23,7 +23,7 @@
           "Noto Sans CJK JP"
           "Noto Sans CJK KR"
         ];
-        monospace = [ "NotoMono Nerd Font" ];
+        monospace = [ "NotoSansM Nerd Font Mono" ];
       };
     };
   };
