@@ -46,6 +46,9 @@
           callback = function()
             require("lean").setup({
               mappings = true,
+              infoview = {
+                width = 100,
+              },
             })
           end,
         }
