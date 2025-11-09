@@ -8,6 +8,7 @@
     ../../home/software/nixvim.nix
     ../../home/software/tmux.nix
     ../../home/software/tree.nix
+    ../../home/software/vscode.nix
   ];
 
   programs.git = {
