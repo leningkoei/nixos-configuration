@@ -34,8 +34,8 @@
     };
 
     extraPlugins = with pkgs.vimPlugins; [
-      plenary-nvim
       lean-nvim
+      plenary-nvim
     ];
 
     extraConfigLua = ''
