@@ -3,7 +3,7 @@
     ../../home/public.nix
     ../../home/desktop/default.nix
 
-    ../../home/software/elan.nix
+    ../../home/software/lean.nix
     ../../home/software/neofetch.nix
     ../../home/software/nixvim.nix
     ../../home/software/tmux.nix

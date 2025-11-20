@@ -16,8 +16,16 @@
     };
 
     plugins = {
-      lsp = {
+      lsp.enable = true;
+
+      cmp = {
         enable = true;
+        autoEnableSources = true;
+        settings.sources = [
+          { name = "nvim_lsp"; }
+          { name = "path"; }
+          { name = "buffer"; }
+        ];
       };
 
       nvim-tree = {
@@ -33,27 +41,13 @@
       web-devicons.enable = true;
     };
 
-    extraPlugins = with pkgs.vimPlugins; [
-      lean-nvim
-      plenary-nvim
-    ];
-
-    extraConfigLua = ''
-      vim.api.nvim_create_autocmd(
-        { "BufReadPre", "BufNewFile" },
-        {
-          pattern = "*.lean",
-          callback = function()
-            require("lean").setup({
-              mappings = true,
-              infoview = {
-                width = 100,
-              },
-            })
-          end,
-        }
-      )
-    '';
+    autoCmd = [{
+      event = ["FileType"];
+      pattern = [ "*" ];
+      command = ''
+        set indentexpr=
+      '';
+    }];
 
     keymaps = [
       # Allow use <ESC> to escape from nvim's terminal mode to normal mode.
