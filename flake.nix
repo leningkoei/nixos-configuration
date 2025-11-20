@@ -24,9 +24,10 @@
           home-manager.nixosModules.home-manager
 
           ./host/shen-zhou-pc/configuration.nix
-          ./module/font.nix
-          ./module/input-method.nix
-          ./module/home-manager.nix
+          ./module/default.nix
+          # ./module/font.nix
+          # ./module/input-method.nix
+          # ./module/home-manager.nix
         ];
       };
 
@@ -38,9 +39,10 @@
           home-manager.nixosModules.home-manager
 
           ./host/visual-box-vm-dell-pc/configuration.nix
-          ./module/font.nix
-          ./module/input-method.nix
-          ./module/home-manager.nix
+          ./module/default.nix
+          # ./module/font.nix
+          # ./module/input-method.nix
+          # ./module/home-manager.nix
         ];
       };
     };
