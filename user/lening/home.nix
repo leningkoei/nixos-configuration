@@ -13,8 +13,12 @@
 
   programs.git = {
     enable = true;
-    userName = "leningkoei";
-    userEmail = "zhanglening2001@gmail.com";
+    settings = {
+      user = {
+        name = "leningkoei";
+        email = "zhanglening2001";
+      };
+    };
   };
 
   programs.bash = {
