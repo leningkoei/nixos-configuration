@@ -19,6 +19,7 @@
       shen-zhou-pc = nixpkgs.lib.nixosSystem {
         specialArgs = inputs // {
           username = "lening";
+          hostname = "shen-zhou-pc";
         };
         modules = [
           home-manager.nixosModules.home-manager
@@ -34,6 +35,7 @@
       visual-box-vm-dell-pc = nixpkgs.lib.nixosSystem {
         specialArgs = inputs // {
           username = "lening";
+          hostname = "visual-box-vm-dell-pc";
         };
         modules = [
           home-manager.nixosModules.home-manager

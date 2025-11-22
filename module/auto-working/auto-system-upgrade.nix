@@ -1,8 +1,10 @@
-{ ... }: {
+{ hostname, ... }: {
   system.autoUpgrade = {
     enable = true;
+    flake = "~/nixosConfigurations#{hostname}";
     dates = "daily";
     persistent = true;
-    channel = "https://nixos.org/channels/nixos-unstable";
+    # `channel` conflicts with `flake`.
+    # channel = "https://nixos.org/channels/nixos-unstable";
   };
 }
