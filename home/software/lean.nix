@@ -5,7 +5,7 @@
     enable = true;
 
     settings = {
-      infoview.width = 100;
+      infoview.width = 64;
     };
   };
 }
