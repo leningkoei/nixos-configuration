@@ -6,7 +6,7 @@
     opts = {
       colorcolumn = "81";
       # cursorcolumn = true;
-      cursorline = true;
+      # cursorline = true;
       relativenumber = true;
 
       # tab
@@ -48,7 +48,7 @@
           ];
         };
       };
-      
+
       indent-blankline = {
         enable = true;
         settings = {
@@ -68,6 +68,9 @@
 
       web-devicons.enable = true;
     };
+
+    colorscheme = "github_dark_default";
+    colorschemes.github-theme.enable = true;
 
     autoCmd = [{
       event = ["FileType"];

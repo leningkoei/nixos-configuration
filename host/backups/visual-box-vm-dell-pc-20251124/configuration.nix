@@ -94,7 +94,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Enable the Flakes feature and the accompanying new nix command-line tool.
+  # Enable the Flakes feature and the accompanying new nix command-line tool
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # List packages installed in system profile. To search, run:
@@ -107,7 +107,7 @@
     wget
   ];
 
-  # Set the default editor to vim.
+  # Set the default editor to vim
   environment.variables.EDITOR = "vim";
 
   # Some programs need SUID wrappers, can be configured further or are
