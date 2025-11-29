@@ -69,8 +69,11 @@
       web-devicons.enable = true;
     };
 
-    colorscheme = "github_dark_default";
-    colorschemes.github-theme.enable = true;
+    colorscheme = "github_dark";
+    colorschemes.github-theme = {
+      enable = true;
+      settings.options.transparent = true;
+    };
 
     autoCmd = [{
       event = ["FileType"];
