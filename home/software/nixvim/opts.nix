@@ -1,7 +1,7 @@
 { ... }: {
   opts = {
     clipboard = "unnamedplus";
-    colorcolumn = 81;
+    colorcolumn = "81";
     # cursorcolumn = true;
     cursorline = true;
     # relativenumber = true;
