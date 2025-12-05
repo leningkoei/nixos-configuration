@@ -32,10 +32,11 @@
     # aliases
     shellAliases = {
       # foo = "bar --parameter argument";
-      check = "git add $nix_home && nixos-rebuild dry-build --flake $nix_home";
-      build = "nixos-rebuild build --flake $nix_home";
-      rebuild = "sudo nixos-rebuild test --flake $nix_home";
-      switch = "sudo nixos-rebuild switch --flake $nix_home";
+      checknix = "(cd $nix_home && git add .) && \
+sudo nixos-rebuild dry-build --flake $nix_home";
+      buildnix = "sudo nixos-rebuild build --flake $nix_home";
+      trynix = "sudo nixos-rebuild test --flake $nix_home";
+      switchnix = "sudo nixos-rebuild switch --flake $nix_home";
     };
   };
 }
