@@ -13,7 +13,7 @@
         # 设置字体大小
         "editor.fontSize" = 12;
         # 设置字体
-        "editor.fontFamily" = "'NotoSansM Nerd Font Mono'";
+        "editor.fontFamily" = "'JetBrainsMono Nerd Font'";
         # 设置在第80列显示竖线
         "editor.rulers" = [ 80 ];
         # 设置tab长度
