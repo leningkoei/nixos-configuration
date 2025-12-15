@@ -3,9 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixos-wsl = {
+      url = "github:nix-community/nixos-wsl";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
-      # url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim = {
@@ -14,7 +17,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, nixos-wsl, ... }@inputs: {
     nixosConfigurations = {
       shen-zhou-pc = nixpkgs.lib.nixosSystem {
         specialArgs = inputs // {
@@ -45,6 +48,21 @@
           # ./module/font.nix
           # ./module/input-method.nix
           # ./module/home-manager.nix
+        ];
+      };
+
+      dell-pc-wsl = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = inputs // {
+          username = "leningwsl";
+          hostname = "dell-pc-wsl";
+        };
+        modules = [
+          home-manager.nixosModules.home-manager
+          nixos-wsl.nixosModules.wsl
+          ./host/dell-pc-wsl/configuration.nix
+          ./module/home-manager.nix
+          ./module/auto-working/default.nix
         ];
       };
     };
