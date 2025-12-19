@@ -34,6 +34,8 @@
       };
       extensions = with pkgs.vscode-extensions; [
         github.github-vscode-theme
+        leanprover.lean4
+        tamasfe.even-better-toml
         vscodevim.vim
       ];
     };

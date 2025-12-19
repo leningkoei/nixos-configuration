@@ -61,8 +61,9 @@
           home-manager.nixosModules.home-manager
           nixos-wsl.nixosModules.wsl
           ./host/dell-pc-wsl/configuration.nix
-          ./module/home-manager.nix
           ./module/auto-working/default.nix
+          ./module/font.nix
+          ./module/home-manager.nix
         ];
       };
     };

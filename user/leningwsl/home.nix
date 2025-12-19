@@ -3,11 +3,13 @@
     ../../home/public.nix
 
     ../../home/software/gcc.nix
-    ../../home/software/lean.nix
+    # ../../home/software/lean.nix
     ../../home/software/neofetch.nix
     ../../home/software/nixvim/default.nix
     ../../home/software/tmux.nix
     ../../home/software/tree.nix
+
+    ../../home/software/vscode.nix
   ];
 
   programs.git = {
