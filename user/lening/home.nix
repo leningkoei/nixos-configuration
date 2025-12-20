@@ -4,8 +4,8 @@
     ../../home/desktop/default.nix
 
     ../../home/software/alacritty.nix
-    ../../home/software/gcc.nix
-    ../../home/software/lean.nix
+    # ../../home/software/gcc.nix
+    # ../../home/software/lean.nix
     ../../home/software/neofetch.nix
     ../../home/software/nixvim/default.nix
     ../../home/software/tmux.nix

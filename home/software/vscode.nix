@@ -5,6 +5,7 @@
     package = pkgs.vscodium;
     profiles.default = {
       userSettings = {
+
         # 设置不使用enter键插入suggest
         "editor.acceptSuggestionOnEnter" = "off";
         # 设置不自动闭合括号与引号
@@ -18,16 +19,25 @@
         "editor.rulers" = [ 80 ];
         # 设置tab长度
         "editor.tabSize" = 2;
+
         # 禁用信任询问，默认信任所有文件
         "security.workspace.trust.enabled" = false;
+
         # 设置终端字体大小
         "terminal.integrated.fontSize" = 12;
+
+        # 取消vim插件对vscode"ctrl p"快捷键覆盖
+        "vim.handleKeys"."<C-p>" = false;
         # 设置使用vim relative mode
         "vim.smartRelativeLine" = true;
+        # 设置vim与系统共享剪切板
+        "vim.useSystemClipboard" = true;
+
         # 设置每次打开都是最大化窗口
         "window.restoreFullscreen" = true;
         # 设置不保存上次关闭窗口状态
         "window.restoreWindows" = "none";
+
         # 设置codium主题（`GitHub Dark Default`等需要
         # `github.github-vscode-extensions`插件）
         "workbench.colorTheme" = "GitHub Dark Default";
