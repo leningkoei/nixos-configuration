@@ -4,6 +4,7 @@
     ../../home/desktop/default.nix
 
     ../../home/software/alacritty.nix
+    ../../home/software/direnv.nix
     # ../../home/software/gcc.nix
     # ../../home/software/lean.nix
     ../../home/software/neofetch.nix

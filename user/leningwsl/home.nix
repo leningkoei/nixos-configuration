@@ -2,7 +2,8 @@
   imports = [
     ../../home/public.nix
 
-    ../../home/software/gcc.nix
+    ../../home/software/direnv.nix
+    # ../../home/software/gcc.nix
     # ../../home/software/lean.nix
     ../../home/software/neofetch.nix
     ../../home/software/nixvim/default.nix
