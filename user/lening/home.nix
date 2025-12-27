@@ -5,10 +5,13 @@
 
     ../../home/software/alacritty.nix
     ../../home/software/direnv.nix
-    # ../../home/software/gcc.nix
+    ../../home/software/gcc.nix
+    ../../home/software/elan.nix
     # ../../home/software/lean.nix
     ../../home/software/neofetch.nix
     ../../home/software/nixvim/default.nix
+    ../../home/software/remmina.nix
+    ../../home/software/rustdesk.nix
     ../../home/software/tmux.nix
     ../../home/software/tree.nix
     ../../home/software/vscode.nix

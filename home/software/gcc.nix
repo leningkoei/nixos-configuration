@@ -1,4 +1,4 @@
 { pkgs, ... }: {
-  home.packages = [ pkgs.gcc ];
+  home.packages = [ pkgs.gcc14 ];
 }
 

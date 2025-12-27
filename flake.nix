@@ -19,6 +19,19 @@
 
   outputs = { nixpkgs, home-manager, nixos-wsl, ... }@inputs: {
     nixosConfigurations = {
+
+      thinkpad = nixpkgs.lib.nixosSystem {
+        specialArgs = inputs // {
+          hostname = "thinkpad";
+          username = "lening";
+        };
+        modules = [
+          home-manager.nixosModules.home-manager
+
+          ./host/thinkpad/configuration.nix
+          ./module/default.nix
+        ];
+      };
       shen-zhou-pc = nixpkgs.lib.nixosSystem {
         specialArgs = inputs // {
           username = "lening";
