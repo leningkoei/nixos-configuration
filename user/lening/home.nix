@@ -8,6 +8,7 @@
     ../../home/software/gcc.nix
     ../../home/software/elan.nix
     # ../../home/software/lean.nix
+    ../../home/software/logseq.nix
     ../../home/software/neofetch.nix
     ../../home/software/nixvim/default.nix
     ../../home/software/remmina.nix
