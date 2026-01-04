@@ -12,7 +12,7 @@
     ../../home/software/neofetch.nix
     ../../home/software/nixvim/default.nix
     ../../home/software/remmina.nix
-    ../../home/software/rustdesk.nix
+    # ../../home/software/rustdesk.nix
     ../../home/software/tmux.nix
     ../../home/software/tree.nix
     ../../home/software/vscode.nix
